@@ -1,6 +1,6 @@
 # Nginx as reverse proxy for Laravel Docker container
 
-## List of commands followed
+## List of commands followed on Dockerfiles
 
 #### Containers
 
@@ -20,6 +20,12 @@ docker run -d --network laravelnginx --name laravel borathiago/laravel:productio
 
 ```
 docker run -d --network laravelnginx --name nginx -p 8080:80 borathiago/nginx:production
+```
+
+## Otherwise docker-compose could be used
+
+```
+docker-compose up -d
 ```
 
 

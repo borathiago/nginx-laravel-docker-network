@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+
+  laravel:
+    image: borathiago/laravel:production
+    container_name: laravel
+    networks:
+      - laravelnginx
+  
+  nginx:
+    image: borathiago/nginx:production
+    container_name: nginx
+    networks:
+      - laravelnginx
+    ports:
+      - "8080:80"
+
+networks:
+  laravelnginx:
+    driver: bridge
