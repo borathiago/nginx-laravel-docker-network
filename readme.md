@@ -25,7 +25,12 @@ docker run -d --network laravelnginx --name nginx -p 8080:80 borathiago/nginx:pr
 ## Otherwise docker-compose could be used
 
 ```
-docker-compose up -d
+docker compose up -d
+```
+
+#### Rebuild images
+````
+docker compose up -d --build
 ```
 
 
