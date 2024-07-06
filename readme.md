@@ -1,6 +1,6 @@
 # Nginx as reverse proxy for Laravel Docker container
 
-## List of commands followed on Dockerfiles
+## List of commands followed for Dockerfiles
 
 #### Containers
 
