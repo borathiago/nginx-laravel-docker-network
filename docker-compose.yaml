@@ -3,12 +3,18 @@ version: '3'
 services:
 
   laravel:
+    build: 
+      context: ./laravel
+      dockerfile: Dockerfile.production
     image: borathiago/laravel:production
     container_name: laravel
     networks:
       - laravelnginx
   
   nginx:
+    build: 
+      context: ./nginx
+      dockerfile: Dockerfile.production
     image: borathiago/nginx:production
     container_name: nginx
     networks:
